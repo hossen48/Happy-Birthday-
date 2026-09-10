@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#140a15">
+<title>A little world for Adu ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"><div class="orb a"></div><div class="orb b"></div><div class="stars"></div><div class="sparkles"></div></div>
+<audio id="bgm" src="assets/bgm/birthday-bgm.mp3" preload="auto" loop></audio>
+
+<header class="hud">
+  <button id="musicBtn" class="glass">♫ <span>music</span></button>
+  <div class="progress"><i id="progress"></i></div>
+  <div id="counter">01 / 11</div>
+</header>
+
+<main id="stage">
+
+<section class="screen active" data-title="start">
+  <div class="center welcome">
+    <div class="tiny">MADE WITH A STUPIDLY LARGE AMOUNT OF LOVE</div>
+    <div class="heart-logo">♡</div>
+    <h1>This little world<br><em>is yours.</em></h1>
+    <p>Tap, swipe, wander. There is no rush.</p>
+    <div class="gesture">↔ <span>swipe to begin</span></div>
+  </div>
+</section>
+
+<section class="screen" data-title="unlock">
+  <div class="center">
+    <div class="tiny">A VERY SERIOUS SECURITY SYSTEM</div>
+    <div class="lock">♡</div>
+    <h2>One tiny question.</h2>
+    <p>The name I always call you</p>
+    <div class="input-wrap"><input id="password" autocomplete="off" placeholder="your answer…"><button id="unlock">open ♡</button></div>
+    <div id="error"></div>
+  </div>
+</section>
+
+<section class="screen" data-title="birthday">
+  <div class="center birthday">
+    <div class="tiny">TRANSMISSION 01 · BIRTHDAY</div>
+    <h2>Make a wish, birthday girl.</h2>
+    <div class="cake" id="cake">
+      <div class="candles"><b><i></i></b><b><i></i></b><b><i></i></b></div>
+      <div class="frost"></div><div class="cakebody"></div><div class="plate"></div>
+      <div class="confetti" id="confetti">✦ ♡ ✧ ♥ ✦ ♡</div>
+    </div>
+    <button class="cute-btn" id="blow">blow the candles ✨</button>
+    <p id="wish" class="soft">Make it a good one.</p>
+  </div>
+</section>
+
+<section class="screen">
+ <div class="center">
+  <div class="tiny">CHAPTER 01</div><h2>Before anything else…</h2>
+  <p class="wide">I could have written you a message. Instead, I made you a tiny place you can come back to whenever you want to remember how loved you are.</p>
+  <div class="signature-card">for the girl I want beside me<br><strong>on the ordinary days too.</strong></div>
+ </div>
+</section>
+
+<section class="screen letter-screen">
+ <article class="letter-card">
+  <div class="letter-label">A LETTER I COULDN'T FIT IN A CHAT</div>
+  <h2>Dear Adu,</h2>
+  <p>Happy birthday to the girl who somehow became one of my favourite parts of life.</p>
+  <p>From childhood friends in 2012 to us in 2026, there are so many ordinary little moments that I want to keep. Random food trips. Arguments that somehow turn funny. Your funny faces. Cooking together. Holding your hand for no reason.</p>
+  <p>I don't only want the big moments. I want the boring Tuesdays too. I want a home that feels like ours, plans that change halfway through, and a life where we keep choosing each other.</p>
+  <p>And yes, I still want Japan. I still want all those little adventures. Maybe one day there will be two little kids running around while we wonder how everything got so loud.</p>
+  <p>For now, I just wanted you to have something that proves I spent time making something that is only yours.</p>
+  <p class="sign">Always yours,<br><b>Me ♡</b></p>
+ </article>
+</section>
+
+<section class="screen">
+ <div class="chapter">
+  <div class="chapter-top"><div class="tiny">CHAPTER 02 · BOYFRIEND.EXE</div><span class="live">● ONLINE</span></div>
+  <h2>Diagnostic says…</h2>
+  <div class="terminal" id="terminal">
+   <div class="terminal-bar"><span>♡ boyfriend.exe</span><span>love_mode</span></div>
+   <div id="termText"></div>
+   <button id="run">run again ↻</button>
+  </div>
+ </div>
+</section>
+
+<section class="screen archive-screen">
+ <div class="chapter archive-chapter">
+  <div class="tiny">CHAPTER 03 · LOVE ARCHIVE</div>
+  <h2>Things I love about you.</h2>
+  <p class="sub">Swipe the whole card — every swipe changes the photo <em>and</em> the reason.</p>
+  <div class="archive-stage" id="archiveStage">
+    <div class="photo-card">
+      <div class="photo-number" id="anum">01 / 10</div>
+      <img id="aimg" alt="Adu" src="assets/photos/01.webp">
+      <div class="photo-shine"></div>
+      <div class="reason">
+        <div class="tiny">REASON <span id="rnum">01</span></div>
+        <h3 id="reasonTitle">The way you make ordinary moments feel special.</h3>
+        <p id="reasonText">Somehow, even the smallest things become memories when they happen with you.</p>
+      </div>
+    </div>
+  </div>
+  <div class="archive-dots" id="dots"></div>
+  <div class="swipe-label">← swipe →</div>
+ </div>
+</section>
+
+<section class="screen">
+ <div class="chapter">
+  <div class="tiny">CHAPTER 04 · OUR LITTLE MUSEUM</div>
+  <h2>Thirty little pieces of us.</h2>
+  <p class="sub">Wander through the memories. Your photos are already yours — just drop them into <code>assets/photos</code>.</p>
+  <div class="memory-wall" id="wall"></div>
+ </div>
+</section>
+
+<section class="screen">
+ <div class="chapter story">
+  <div class="tiny">CHAPTER 05 · OUR STORY</div>
+  <h2>Then → now → next.</h2>
+  <div class="storyline">
+   <div><span>2012</span><h3>Where it started.</h3><p>Two childhood friends, without knowing what the years would turn them into.</p></div>
+   <div><span>♡</span><h3>Somewhere along the way.</h3><p>The jokes, the fights, the random conversations, the little things nobody else would understand.</p></div>
+   <div><span>2026</span><h3>Here we are.</h3><p>Still learning each other. Still collecting moments. Still choosing each other.</p></div>
+   <div><span>∞</span><h3>And then, the rest.</h3><p>More food trips. More hand-holding. More adventures. Japan. Home. Us.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="screen">
+ <div class="chapter">
+  <div class="tiny">CHAPTER 06 · THE INVESTIGATION</div>
+  <h2>The evidence is overwhelming.</h2>
+  <div class="case-grid">
+   <article><small>EVIDENCE 01</small><h3>She steals his food.</h3><p>Repeated incidents. Zero complaints from the victim.</p></article>
+   <article><small>EVIDENCE 02</small><h3>He wants her hand.</h3><p>In crowded places. Quiet places. Basically everywhere.</p></article>
+   <article><small>EVIDENCE 03</small><h3>They keep saying “someday.”</h3><p>Japan, a home, a life, tiny plans that keep getting bigger.</p></article>
+  </div>
+  <div class="verdict">VERDICT<br><strong>GUILTY OF LOVING EACH OTHER.</strong> ♥</div>
+ </div>
+</section>
+
+<section class="screen">
+ <div class="chapter quiz-page">
+  <div class="tiny">CHAPTER 07 · COMPATIBILITY TEST</div>
+  <h2>Let's test something.</h2>
+  <p class="sub">Swipe down through the questions. There may be a suspiciously predictable result.</p>
+  <div id="quiz"></div>
+  <div id="quizResult" class="quiz-result"></div>
+ </div>
+</section>
+
+<section class="screen final">
+ <div class="center final-center">
+  <div class="tiny">FINAL TRANSMISSION</div>
+  <div class="hands" id="hands"><span class="h1">♡</span><span class="h2">♥</span><span class="h3">✦</span><div class="ring"></div><div class="thread"></div><div class="hands-emoji">🤝</div></div>
+  <h2>Come a little closer.</h2>
+  <p>Happy birthday, Adu.</p>
+  <p class="final-text">From childhood friends in 2012 to us in 2026, somehow you became one of my favourite parts of life.</p>
+  <p class="final-text">I hope 24 is gentle with you, exciting for you, and full of little moments that make you stop and smile.</p>
+  <p class="final-text">I promise to marry you as soon as possible, never leave you, and never hurt you.</p>
+  <p class="final-text">And if you ever forget how loved you are… come back to this little website. I'll leave the light on.</p>
+  <div class="hearts">♡ ♥ ♡ ✦ 💗 ✦ ♡ ♥ ♡</div>
+  <div class="end-note">swipe back anytime · this little world is always here</div>
+ </div>
+</section>
+
+</main>
+<div class="edge-hint">swipe anywhere ↔</div>
+<script src="script.js"></script>
+</body></html>
